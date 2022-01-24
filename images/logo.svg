@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="94" viewBox="0 0 128 94">
+  <defs>
+    <filter id="Sh_p">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="N_w">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="clock-solid">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="clock-solid-2">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood result="color-4"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-4"/>
+      <feComposite operator="in" in="color-4"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_18" data-name="Groupe 18" transform="translate(-156 -4)">
+    <g data-type="innerShadowGroup">
+      <text id="Sh_p-2" data-name="Sh   p" transform="translate(156 4)" fill="#141414" font-size="40" font-family="Poppins-BoldItalic, Poppins" font-weight="700" font-style="italic"><tspan x="0" y="42">S</tspan><tspan y="42" xml:space="preserve" fill="#ca965c">h   p</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 156, 4)" filter="url(#Sh_p)">
+        <text id="Sh_p-3" data-name="Sh   p" fill="#fff" font-size="40" font-family="Poppins-BoldItalic, Poppins" font-weight="700" font-style="italic"><tspan x="0" y="42">S</tspan><tspan y="42" xml:space="preserve">h   p</tspan></text>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <text id="N_w-2" data-name="N   w" transform="translate(177 42)" fill="#141414" font-size="40" font-family="Poppins-BoldItalic, Poppins" font-weight="700" font-style="italic"><tspan x="0" y="42" xml:space="preserve">N   </tspan><tspan y="42" fill="#ca965c">w</tspan></text>
+      <g transform="matrix(1, 0, 0, 1, 156, 4)" filter="url(#N_w)">
+        <text id="N_w-3" data-name="N   w" transform="translate(21 38)" fill="#fff" font-size="40" font-family="Poppins-BoldItalic, Poppins" font-weight="700" font-style="italic"><tspan x="0" y="42" xml:space="preserve">N   </tspan><tspan y="42">w</tspan></text>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <path id="clock-solid-3" data-name="clock-solid" d="M21,8A13,13,0,1,0,34,21,13,13,0,0,0,21,8Zm4.848,16.407h0L24.8,25.718a.839.839,0,0,1-1.179.131h0l-3.512-2.606a2.1,2.1,0,0,1-.786-1.637V13.452a.839.839,0,0,1,.839-.839h1.677a.839.839,0,0,1,.839.839V21l3.04,2.228A.839.839,0,0,1,25.848,24.407Z" transform="translate(201 13)"/>
+      <g transform="matrix(1, 0, 0, 1, 156, 4)" filter="url(#clock-solid)">
+        <path id="clock-solid-4" data-name="clock-solid" d="M21,8A13,13,0,1,0,34,21,13,13,0,0,0,21,8Zm4.848,16.407h0L24.8,25.718a.839.839,0,0,1-1.179.131h0l-3.512-2.606a2.1,2.1,0,0,1-.786-1.637V13.452a.839.839,0,0,1,.839-.839h1.677a.839.839,0,0,1,.839.839V21l3.04,2.228A.839.839,0,0,1,25.848,24.407Z" transform="translate(45 9)" fill="#fff"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <path id="clock-solid-5" data-name="clock-solid" d="M21,8A13,13,0,1,0,34,21,13,13,0,0,0,21,8Zm4.848,16.407h0L24.8,25.718a.839.839,0,0,1-1.179.131h0l-3.512-2.606a2.1,2.1,0,0,1-.786-1.637V13.452a.839.839,0,0,1,.839-.839h1.677a.839.839,0,0,1,.839.839V21l3.04,2.228A.839.839,0,0,1,25.848,24.407Z" transform="translate(201 49)"/>
+      <g transform="matrix(1, 0, 0, 1, 156, 4)" filter="url(#clock-solid-2)">
+        <path id="clock-solid-6" data-name="clock-solid" d="M21,8A13,13,0,1,0,34,21,13,13,0,0,0,21,8Zm4.848,16.407h0L24.8,25.718a.839.839,0,0,1-1.179.131h0l-3.512-2.606a2.1,2.1,0,0,1-.786-1.637V13.452a.839.839,0,0,1,.839-.839h1.677a.839.839,0,0,1,.839.839V21l3.04,2.228A.839.839,0,0,1,25.848,24.407Z" transform="translate(45 45)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

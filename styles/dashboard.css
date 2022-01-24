@@ -1,0 +1,1994 @@
+@import url(var.css);
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 100%;
+}
+
+body main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+body main .lf-sc-disp {
+  position: absolute;
+  left: 0;
+  width: 250px;
+  height: calc(100% - 20px);
+  border-radius: 20px;
+  font-family: "Muli", sans-serif;
+  background-color: #2e2d2d;
+  margin: 0 0 0 10px;
+  overflow: hidden auto;
+  outline: none;
+}
+
+body main .lf-sc-disp header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #222;
+  border-radius: 20px 20px 0 0;
+}
+
+body main .lf-sc-disp header img {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: contain;
+  transform: translateX(4px);
+}
+
+body main .lf-sc-disp header h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+body main .lf-sc-disp header span {
+  font-weight: bold;
+  padding: 5px 10px;
+  margin-top: 15px;
+  background-color: var(--indigo);
+  color: #fff;
+  border-radius: 30px;
+  font-size: 12px;
+}
+
+body main .lf-sc-disp section {
+  position: relative;
+  width: 100%;
+  border-radius: 0px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body main .lf-sc-disp section .line {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: #222;
+  z-index: 1;
+}
+
+body main .lf-sc-disp section .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  border-radius: 0 80px 0 0;
+  z-index: 2;
+  background-color: #2e2d2d;
+  padding-bottom: 90px;
+}
+
+body main .lf-sc-disp section .container .nav-link {
+  position: relative;
+  margin-bottom: 30px;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  transition: 0.4s ease transform, 0.4s opacity;
+  opacity: 0.5;
+}
+
+body main .lf-sc-disp section .container .nav-link:hover {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+body main .lf-sc-disp section .container .nav-link:first-of-type {
+  margin-top: 30px;
+}
+
+body main .lf-sc-disp section .container .nav-link a {
+  color: inherit;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+}
+
+body main .lf-sc-disp section .container .nav-link a .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px 0 25px;
+}
+
+body main .lf-sc-disp section .container .nav-link a .icon img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+body main .lf-sc-disp section .container .nav-link.active {
+  opacity: 1;
+}
+
+body main .lf-sc-disp section .container .nav-link.active::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-42%);
+  left: 78%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: var(--indigo);
+}
+
+body main .lf-sc-disp section .report {
+  position: fixed;
+  bottom: 0;
+  margin: 30px;
+  width: 150px;
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 3;
+  box-shadow: 0 9px 31px 6px rgba(0, 0, 0, 0.1);
+}
+
+body main .lf-sc-disp section .report h4 {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  color: #bebebe;
+  margin-bottom: 5px;
+}
+
+body main .lf-sc-disp section .report a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body main .lf-sc-disp section .report a img {
+  width: 15px;
+  margin-left: 5px;
+}
+
+body main .lf-sc-disp section .report a:hover {
+  text-decoration: underline;
+}
+
+body main #dashboard {
+  position: absolute;
+  width: calc(100% - 310px);
+  left: 290px;
+  height: calc(100%);
+  overflow: hidden auto;
+  padding-right: 20px;
+}
+
+body main #dashboard header {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+body main #dashboard header .con {
+  display: flex;
+  align-items: center;
+}
+
+body main #dashboard header .con button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 50%;
+  color: white;
+  margin-right: 10px;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+body main #dashboard header .con button:hover {
+  background-color: rgba(255, 255, 255, 0.253);
+}
+
+body main #dashboard header .con button svg {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+body main #dashboard header .con h2 {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+}
+
+body main #dashboard header .con h2 b {
+  color: #f95343;
+  font-family: "playfair display";
+  font-weight: bolder;
+}
+
+body main #dashboard header .st-TY0 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: fit-content;
+}
+
+body main #dashboard header .st-TY0 i {
+  color: #828283;
+}
+
+body main #dashboard header .st-TY0 .notification-section {
+  position: relative;
+  width: 15px;
+  height: 100%;
+  width: 40px;
+  background-color: #2e2d2d;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body main #dashboard header .st-TY0 .notification-section.active::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--indigo);
+  top: 10px;
+  left: 21px;
+}
+
+body main #dashboard header .st-TY0 .notification-section:focus ~ #notification {
+  transform: translateY(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+body main #dashboard header .st-TY0 .notification-section img {
+  width: 18px;
+}
+
+body main #dashboard header .st-TY0 .nav-toggle {
+  position: relative;
+  background-color: #2e2d2d;
+  width: 15px;
+  height: 100%;
+  width: 40px;
+  border-radius: 5px;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body main #dashboard header .st-TY0 .nav-toggle i {
+  color: #828283;
+  font-size: 20px;
+}
+
+body main #dashboard header .st-TY0 .user {
+  position: relative;
+  display: flex;
+  background-color: #2e2d2d;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 100%;
+  width: 250px;
+  color: #828283;
+  font-size: 16px;
+}
+
+body main #dashboard header .st-TY0 .user .icon {
+  width: 33px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-1px);
+}
+
+body main #dashboard header .st-TY0 #notification {
+  position: absolute;
+  width: 100%;
+  background-color: #2e2d2d;
+  top: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 999999;
+  box-shadow: 0 0 13px -2px rgba(0, 0, 0, 0.94);
+  transition: 0.4s transform, 0.4s opacity;
+  opacity: 0;
+  transform: translateY(40px);
+  outline: none;
+  pointer-events: none;
+}
+
+body main #dashboard header .st-TY0 #notification:focus {
+  transform: translateY(0px);
+  opacity: 1;
+  pointer-events: all;
+}
+
+body main #dashboard header .st-TY0 #notification header {
+  height: 30px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 20px);
+  font-family: "Muli", sans-serif;
+}
+
+body main #dashboard header .st-TY0 #notification header h3 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0.8;
+  letter-spacing: 0.3px;
+  font-size: 18px;
+}
+
+body main #dashboard header .st-TY0 #notification header .num-notif {
+  width: fit-content;
+  background-color: #fb3c2a31;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 30px;
+  color: #f95343;
+  font-weight: 900;
+}
+
+body main #dashboard header .st-TY0 #notification .l {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  background-color: #8383834d;
+  height: 1.5px;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container:hover::-webkit-scrollbar {
+  width: 5px;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container::-webkit-scrollbar {
+  width: 0px;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .container {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Muli", sans-serif;
+  height: 200px;
+  opacity: 0.7;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .container img.back {
+  position: relative;
+  width: 120px;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .container h5 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .container small {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification {
+  position: relative;
+  padding: 15px 10px;
+  display: flex;
+  width: calc(100% - 20px);
+  border-bottom: 1.5px solid #8383834d;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification:last-of-type {
+  border-bottom: none;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text {
+  position: relative;
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  font-family: "Muli";
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text h4 {
+  margin: 0;
+  font-weight: 700;
+  opacity: 0.8;
+  color: #fff;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text h4 b {
+  font-weight: 900;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text small {
+  font-size: 12px;
+  text-align: left;
+  color: #838383;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text small b {
+  font-weight: 900;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text div.btn {
+  position: relative;
+  width: fit-content;
+  padding: 5px 15px;
+  margin-top: 10px;
+  font-family: "Muli";
+  border: 2px solid currentColor;
+  background-color: currentColor;
+  text-transform: capitalize;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s transform, 0.2s background-color, 0.2s color;
+  cursor: pointer;
+  font-weight: 700;
+  transform: translateX(-15px) scale(0.6);
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text div.btn span {
+  color: #fff;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text div.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+body main #dashboard header .st-TY0 #notification .ntf-container .notification .text div.btn:hover {
+  background-color: transparent;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area {
+  position: relative;
+  width: calc(100% - 40px);
+  padding: 13px 20px;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area .l {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area.disabled {
+  pointer-events: none;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area.disabled button {
+  opacity: 0.4;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area div.btn {
+  position: relative;
+  background-color: var(--indigo);
+  color: #fff;
+  border: none;
+  font-family: "Muli", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  padding: 12px 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  border: 1.5px solid var(--indigo);
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.2s transform, 0.2s background-color, 0.2s color;
+  user-select: none;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area div.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area div.btn:hover {
+  background-color: transparent;
+  color: var(--indigo);
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area div.btn:active::before {
+  opacity: 0.1;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area div.btn:focus ~ #notification {
+  transform: translateY(0px);
+  background-color: red;
+  opacity: 1;
+  pointer-events: all;
+}
+
+body main #dashboard header .st-TY0 #notification .clear-area div.btn i {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+body main #dashboard .container {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+}
+
+body main #dashboard .container .top-section {
+  position: relative;
+  width: calc(100% - 15px);
+  display: flex;
+  justify-content: center;
+}
+
+body main #dashboard .container .top-section .nums-dash {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc {
+  position: relative;
+  margin-right: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #2e2d2d;
+  color: #ffff;
+  border-radius: 5px;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc:last-of-type {
+  margin-right: 0;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--indigo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .icon img {
+  width: 60%;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .icon img.sz {
+  width: 80%;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .icon img.bdr {
+  border-radius: 7px;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .stats {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  font-family: "Muli", sans-serif;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .stats h3 {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+body main #dashboard .container .top-section .nums-dash .nm-8lzc .stats span {
+  opacity: 0.7;
+  text-transform: capitalize;
+}
+
+body main #dashboard .container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body main #dashboard .container .header h2 {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+}
+
+body main #dashboard .container .header button {
+  position: relative;
+  font-family: "Muli", sans-serif;
+  background-color: var(--indigo);
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s transform;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+body main #dashboard .container .header button img {
+  width: 16px;
+  margin-left: 10px;
+  transform: translateY(1px);
+}
+
+body main #dashboard .container .header button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+body main #dashboard .container .header button:active {
+  transform: scale(0.99);
+}
+
+body main #dashboard .container .header button:active::before {
+  opacity: 0.1;
+}
+
+body main #dashboard .container form {
+  position: relative;
+  width: 1000px;
+  margin-top: 100px;
+  background-color: #2e2d2d;
+  padding: 50px 30px;
+  margin-bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+body main #dashboard .container form .inputs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+body main #dashboard .container form .inputs .input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+body main #dashboard .container form .inputs .input label {
+  color: #fff;
+  font-size: 20px;
+}
+
+body main #dashboard .container form .inputs .input input {
+  width: calc(100% - 20px);
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 14px;
+  padding: 15px 10px;
+  margin: 20px 0;
+  background-color: #222;
+  border: none;
+  font-family: "Playfair Display", sans-serif;
+  color: white;
+}
+
+body main #dashboard .container form .inputs .input select {
+  width: calc(100%);
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-size: 14px;
+  padding: 15px 10px;
+  margin: 20px 0;
+  background-color: #222;
+  border: none;
+  font-family: "Playfair Display", sans-serif;
+  color: white;
+}
+
+body main #dashboard .container form .inputs .input button {
+  background-color: var(--indigo);
+  color: #fff;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 19px;
+  font-family: inherit;
+  border: none;
+  margin-top: 20px;
+}
+
+body main #dashboard .container form .inputs.mid {
+  position: relative;
+}
+
+body main #dashboard .container form .inputs.mid .input {
+  width: calc(50%);
+}
+
+body main #dashboard .container .projects {
+  position: relative;
+  width: 100%;
+  margin-top: 60px;
+}
+
+body main #dashboard .container .projects .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body main #dashboard .container .projects .header h2 {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+}
+
+body main #dashboard .container .projects .header button {
+  position: relative;
+  font-family: "Muli", sans-serif;
+  background-color: var(--indigo);
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s transform;
+  overflow: hidden;
+}
+
+body main #dashboard .container .projects .header button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+body main #dashboard .container .projects .header button:active {
+  transform: scale(0.99);
+}
+
+body main #dashboard .container .projects .header button:active::before {
+  opacity: 0.1;
+}
+
+body main #dashboard .container .projects .main {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+body main #dashboard .container .projects .main .project {
+  position: relative;
+  background-color: #2e2d2d;
+  padding: 30px;
+  font-family: "Muli", sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+body main #dashboard .container .projects .main .project .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body main #dashboard .container .projects .main .project .head h4 {
+  margin: 0;
+  color: var(--indigo);
+}
+
+body main #dashboard .container .projects .main .project .head button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+body main #dashboard .container .projects .main .project .head button:focus ~ .options {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+body main #dashboard .container .projects .main .project .head button img {
+  position: absolute;
+  width: 20px;
+  left: 80%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body main #dashboard .container .projects .main .project .head .options {
+  position: absolute;
+  background-color: white;
+  right: 0;
+  top: 100%;
+  pointer-events: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px -3px, rgba(0, 0, 0, 0.14) 0px 8px 10px 1px, rgba(0, 0, 0, 0.12) 0px 3px 14px 2px;
+  background-color: white;
+  position: absolute;
+  overflow: hidden auto;
+  min-width: 16px;
+  min-height: 16px;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  margin-top: 10px;
+  transition: 0.3s transform, 0.4s opacity;
+  transform: translateY(30px);
+  min-width: 100px;
+  max-width: 200px;
+  opacity: 0;
+}
+
+body main #dashboard .container .projects .main .project .head .options .option {
+  padding: 10px;
+  margin-bottom: 1px;
+  text-transform: capitalize;
+  color: inherit;
+  text-decoration: none;
+}
+
+body main #dashboard .container .projects .main .project .head .options .option:hover {
+  text-decoration: underline;
+}
+
+body main #dashboard .container .projects .main .project .head .options .option:first-of-type {
+  padding-top: 20px;
+}
+
+body main #dashboard .container .projects .main .project .head .options .option:last-of-type {
+  margin-bottom: 0;
+}
+
+body main #dashboard .container .projects .main .project .head .options .option:hover {
+  background-color: #ebe8e8;
+}
+
+body main #dashboard .container .projects .main .project .body h1.title {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+body main #dashboard .container .projects .main .project .body p.description {
+  color: white;
+  opacity: 0.8;
+}
+
+body main #dashboard .container .projects .main .project .body .progress {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+body main #dashboard .container .projects .main .project .body .progress .hd {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+body main #dashboard .container .projects .main .project .body .progress .hd span {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+body main #dashboard .container .projects .main .project .body .progress .hd span img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+body main #dashboard .container .projects .main .project .body .progress .bar-dsk {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 30px;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+body main #dashboard .container .projects .main .project .body .progress .bar-dsk div {
+  position: relative;
+  height: 100%;
+  left: 0;
+  background-color: var(--indigo);
+}
+
+body main #dashboard .container .projects .main .project .body .line {
+  position: relative;
+  width: calc(100% + 60px);
+  background-color: #1a1a1a;
+  height: 2px;
+  margin-top: 30px;
+  transform: translateX(-30px);
+}
+
+body main #dashboard .container .projects .main .project .footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body main #dashboard .container .projects .main .project .footer div {
+  position: relative;
+  color: white;
+  background-color: var(--indigo);
+  border: 0;
+  font-size: 15px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  width: fit-content;
+  transform: translateY(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body main #dashboard .container .projects .main .project .footer div.Browse {
+  background-color: transparent;
+  padding: 0;
+}
+
+body main #dashboard .container .projects .main .project .footer div img {
+  width: 20px;
+}
+
+body main #dashboard .container .products {
+  position: relative;
+  margin-top: 20px;
+}
+
+body main #dashboard .container .products .table-con {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+body main #dashboard .container .products .table-con:hover::-webkit-scrollbar {
+  height: 5px;
+}
+
+body main #dashboard .container .products .table-con::-webkit-scrollbar {
+  height: 0px;
+}
+
+body main #dashboard .container .products .table-con::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+}
+
+body main #dashboard .container .products .table-con::-webkit-scrollbar-track {
+  background: #464646;
+}
+
+body main #dashboard .container .products .table-con table {
+  position: relative;
+  background-color: #2e2d2d;
+  border-collapse: collapse;
+  border: 2px solid #464646;
+  border-spacing: 0;
+  width: 100%;
+  min-width: 1000px;
+  text-align: center;
+}
+
+body main #dashboard .container .products .table-con table thead tr {
+  border: 2px solid #464646;
+}
+
+body main #dashboard .container .products .table-con table thead tr th {
+  border: 2px solid #464646;
+  padding: 30px 10px;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+body main #dashboard .container .products .table-con table tbody tr {
+  transition: 0.4s background-color;
+}
+
+body main #dashboard .container .products .table-con table tbody tr:hover {
+  background-color: #8383831e;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td {
+  border: 2px solid #464646;
+  padding: 25px 15px;
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td.center {
+  text-align: center;
+  padding: 25px 15px;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td.actions-ud a {
+  margin-right: 10px;
+  transition: 0.3s color;
+  color: #fff;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td.actions-ud a:hover {
+  color: var(--info);
+}
+
+body main #dashboard .container .products .table-con table tbody tr td.actions-ud a:last-of-type {
+  margin-right: 0;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td.actions-ud a:last-of-type:hover {
+  color: var(--danger);
+}
+
+body main #dashboard .container .products .table-con table tbody tr td span {
+  font-size: 14px;
+  padding: 3px 13px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td span.approved {
+  color: #28c76f;
+  background-color: #28c76f1f;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td span.pending {
+  color: #ff9f43;
+  background-color: #ff9f431f;
+}
+
+body main #dashboard .container .products .table-con table tbody tr td span.denied {
+  color: #f95343;
+  background-color: #fb3c2a31;
+}
+
+body main #dashboard .container .recent-messages {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+body main #dashboard .container .recent-messages .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+body main #dashboard .container .recent-messages .container .messages {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message {
+  position: relative;
+  width: calc(100% - 40px);
+  background-color: #2e2d2d;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .top-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .top-section .avatar {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .top-section .avatar img {
+  width: 100%;
+  height: 100%;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .top-section .name h4 {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  color: #fff;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .message-content {
+  position: relative;
+  margin-top: 5px;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .message-content p {
+  font-family: "Muli", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 20px;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .attachements {
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .attachements img {
+  width: 15px;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .attachements span {
+  color: #fff;
+  margin-left: 2px;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Muli", sans-serif;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div {
+  padding: 4px 8px;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 3px;
+  margin-left: 5px;
+  min-height: 100%;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div a:hover {
+  text-decoration: underline;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div.view {
+  background-color: #bdb5ec;
+  color: #5b44f2;
+  margin-left: 0;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div.download {
+  color: #28c76f;
+  background-color: #cad8d0;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div.reply {
+  display: flex;
+  align-items: center;
+  color: #f95343;
+  background-color: #fcc3bf;
+}
+
+body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div.reply img {
+  width: 13px;
+  margin-right: 5px;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox {
+  position: relative;
+  width: 60%;
+  height: fit-content;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container {
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Muli", sans-serif;
+  margin-top: 0;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image img.ab {
+  z-index: 2;
+  width: 190px;
+  transform: translateX(13px);
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image img#back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container h2 {
+  margin: 25px 0 0 0;
+  color: #fff;
+  font-size: 19px;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container h3 {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container button {
+  position: relative;
+  font-family: "Muli", sans-serif;
+  background-color: #fff;
+  color: black;
+  border: 0;
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+body main #dashboard .container .recent-messages .container .explore-section-inbox .container button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body main #dashboard .container .payment-fast-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #2e2d2d;
+  margin: 30px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+body main #dashboard .container .payment-fast-section div {
+  width: 50%;
+}
+
+body main #dashboard .container .payment-fast-section div.image-section {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body main #dashboard .container .payment-fast-section div.image-section img {
+  width: 100%;
+  height: 113%;
+}
+
+body main #dashboard .container .payment-fast-section div.text-container {
+  height: calc(100% - 40px);
+  width: calc(50% - 40px);
+  padding: 20px;
+}
+
+body main #dashboard .container .payment-fast-section div.text-container h1 {
+  font-family: "playfair display", sans-serif;
+  color: #fff;
+  font-size: 35px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+body main #dashboard .container .payment-fast-section div.text-container p {
+  margin-left: 30px;
+  color: #fff;
+  opacity: 0.7;
+  line-height: 22px;
+}
+
+body main #dashboard .container .payment-fast-section div.text-container button {
+  position: relative;
+  font-size: 15px;
+  padding: 10px;
+  width: 150px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-family: "Playfair Display", sans-serif;
+  background-color: var(--indigo);
+  color: white;
+  border: none;
+  border: 1.5px solid var(--indigo);
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.2s transform, 0.2s background-color, 0.2s color;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+body main #dashboard .container .payment-fast-section div.text-container button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s opacity;
+  transition: 0.3s opacity;
+}
+
+body main #dashboard .container .payment-fast-section div.text-container button:hover {
+  background-color: transparent;
+  color: var(--indigo);
+}
+
+body main #dashboard .container .payment-fast-section div.text-container button:active::before {
+  opacity: 0.1;
+}
+
+@media (max-width: 1280px) {
+  body main .lf-sc-disp header img {
+    width: 50px;
+    height: 50px;
+  }
+  body main .lf-sc-disp header h3 {
+    font-size: 13px;
+  }
+  body main .lf-sc-disp header span {
+    padding: 5px 8px;
+    border-radius: 20px;
+    font-size: 8.5px;
+  }
+  body main .lf-sc-disp section .container .nav-link {
+    padding: 5px;
+    margin-bottom: 25px;
+  }
+  body main .lf-sc-disp section .container .nav-link a {
+    font-size: 13px;
+  }
+  body main .lf-sc-disp section .container .nav-link a .icon {
+    margin: 0 20px 0 25px;
+  }
+  body main .lf-sc-disp section .container .nav-link a .icon img {
+    width: 14px;
+    margin-right: 10px;
+  }
+  body main .lf-sc-disp section .container .nav-link.active::before {
+    height: 6px;
+    width: 6px;
+  }
+  body main .lf-sc-disp section .report {
+    margin: 30px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+  body main .lf-sc-disp section .report h4 {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  body main .lf-sc-disp section .report a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  body main .lf-sc-disp section .report a img {
+    width: 10px;
+  }
+  body main #dashboard .container .top-section .nums-dash .nm-8lzc {
+    margin: 10px;
+  }
+  body main #dashboard .container form {
+    position: relative;
+    width: calc(100% - 60px);
+  }
+  body main #dashboard .container .projects .main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body main #dashboard .container .projects .main .project {
+    margin: 10px;
+  }
+  body main #dashboard .container .recent-messages .container .messages {
+    width: 50%;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox {
+    position: relative;
+    width: 50%;
+    height: fit-content;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Muli", sans-serif;
+    margin-top: 0;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image img.ab {
+    width: 150px;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container h2 {
+    font-size: 15px;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container h3 {
+    font-size: 11px;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container button {
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 1200px) {
+  body main #dashboard .container .recent-messages .container .messages {
+    width: 70%;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox {
+    position: relative;
+    width: 30%;
+    height: fit-content;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Muli", sans-serif;
+    margin-top: 0;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image img.ab {
+    width: 90px;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container h2 {
+    width: 90%;
+    font-size: 12px;
+    text-align: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container h3 {
+    width: 90%;
+    font-size: 11px;
+    text-align: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container button {
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 1000px) {
+  body main #dashboard .container .recent-messages .container {
+    flex-direction: column;
+  }
+  body main #dashboard .container .recent-messages .container .messages {
+    width: 100%;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+    font-family: "Muli", sans-serif;
+    margin-top: 0;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container .image img.ab {
+    width: 150px;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container h2 {
+    font-size: 17px;
+    text-align: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  body main #dashboard .container .recent-messages .container .explore-section-inbox .container button {
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 2px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  body main #dashboard .container .payment-fast-section div.image-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+  }
+  body main #dashboard .container .payment-fast-section div.image-section img {
+    position: absolute;
+    bottom: 0;
+    width: 71%;
+    height: fit-content;
+    left: 100%;
+    transform: translate(-89%, 30px);
+  }
+  body main #dashboard .container .payment-fast-section div.text-container {
+    padding: 0;
+    width: calc(100% - 40px);
+    margin-left: 20px;
+    z-index: 2;
+  }
+  body main #dashboard .container .payment-fast-section div.text-container h1 {
+    font-size: 27px;
+    margin: 40px 0 0 0;
+    display: flex;
+  }
+  body main #dashboard .container .payment-fast-section div.text-container h1 br {
+    display: none;
+  }
+  body main #dashboard .container .payment-fast-section div.text-container p {
+    margin: 10px 0 0 0;
+    color: #fff;
+    opacity: 0.7;
+    line-height: 22px;
+    font-size: 13px;
+  }
+  body main #dashboard .container .payment-fast-section div.text-container p br {
+    display: none;
+  }
+  body main #dashboard .container .payment-fast-section div.text-container button {
+    position: relative;
+    font-size: 14px;
+    padding: 8px 10px;
+    width: 130px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body main {
+    display: block;
+  }
+  body main .lf-sc-disp {
+    position: fixed;
+    left: -0px;
+    width: 300px;
+    height: calc(100%);
+    top: 0px;
+    border-radius: 0px;
+    margin: 0;
+    z-index: 999;
+    box-shadow: 0 9px 31px 6px rgba(0, 0, 0, 0.2);
+    transform: translateX(-300px);
+    transition: 0.3s transform;
+    outline: none;
+    transition-delay: 0.2s;
+  }
+  body main .lf-sc-disp:focus {
+    transform: translateX(0px);
+  }
+  body main .lf-sc-disp:focus ~ #dashboard {
+    filter: blur(10px);
+    pointer-events: none;
+  }
+  body main .lf-sc-disp header {
+    border-radius: 0;
+  }
+  body main .lf-sc-disp header img {
+    width: 90px;
+    height: 90px;
+  }
+  body main .lf-sc-disp header h3 {
+    font-size: 18px;
+  }
+  body main .lf-sc-disp header span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+  }
+  body main .lf-sc-disp section .container .nav-link a {
+    font-size: 15px;
+  }
+  body main .lf-sc-disp section .container .nav-link a .icon img {
+    width: 18px;
+  }
+  body main .lf-sc-disp section .report {
+    margin: 30px;
+    width: calc(100% - 100px);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  body main .lf-sc-disp section .report h4 {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  body main .lf-sc-disp section .report a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 2px;
+    text-decoration: underline #bebebe;
+  }
+  body main .lf-sc-disp section .report a img {
+    width: 15px;
+  }
+  body main #dashboard {
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 30px);
+    height: auto;
+    top: 0;
+    padding-top: 40px;
+    transition: 0.2s filter;
+    padding-right: 0;
+  }
+  body main #dashboard header {
+    margin-top: 0;
+    height: 40px;
+    width: 100%;
+  }
+  body main #dashboard header .con {
+    display: none;
+  }
+  body main #dashboard header .st-TY0 {
+    background-color: transparent;
+    width: 100%;
+  }
+  body main #dashboard header .st-TY0 .user {
+    width: calc(100% - 45px - 33px);
+  }
+  body main #dashboard header .st-TY0 .nav-toggle {
+    display: flex;
+  }
+  body main #dashboard .container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body main #dashboard .container .top-section {
+    width: calc(100%);
+    justify-content: start;
+  }
+  body main #dashboard .container .top-section .nums-dash .nm-8lzc {
+    width: 100%;
+    margin: 0px 0;
+    border-radius: 0;
+  }
+  body main #dashboard .container .top-section .nums-dash .nm-8lzc:first-of-type {
+    border-radius: 5px 5px 0 0;
+    padding-top: 30px;
+  }
+  body main #dashboard .container .top-section .nums-dash .nm-8lzc:last-of-type {
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 30px;
+  }
+  body main #dashboard .container .header {
+    margin-top: 30px;
+  }
+  body main #dashboard .container form {
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 30px 0;
+    width: calc(100%);
+  }
+  body main #dashboard .container form .inputs {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  body main #dashboard .container form .inputs .input {
+    margin-bottom: 0;
+    width: 90%;
+  }
+  body main #dashboard .container form .inputs .input button {
+    font-size: 16px;
+  }
+  body main #dashboard .container form .inputs .input label {
+    font-size: 16px;
+  }
+  body main #dashboard .container form .inputs.mid {
+    flex-direction: column;
+  }
+  body main #dashboard .container form .inputs.mid .input {
+    width: 90%;
+  }
+  body main #dashboard .container .projects {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  body main #dashboard .container .projects .header h2 {
+    color: #fff;
+  }
+  body main #dashboard .container .projects .header button {
+    color: #fff;
+  }
+  body main #dashboard .container .projects .main {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+  body main #dashboard .container .projects .main .project {
+    max-width: 100%;
+    max-height: 300px;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body main #dashboard .container .projects .main .project:last-of-type {
+    margin-bottom: 0;
+  }
+  body main #dashboard .container .projects .main .project .head .options .option {
+    padding-left: 20px;
+  }
+  body main #dashboard .container .products .table-con table thead tr th {
+    padding: 20px 10px;
+    font-size: 15px;
+  }
+  body main #dashboard .container .products .table-con table tbody tr td {
+    padding: 15px;
+    font-size: 14px;
+  }
+  body main #dashboard .container .products .table-con table tbody tr td.center {
+    padding: 15px 15px;
+  }
+  body main #dashboard .container .products .table-con table tbody tr td span {
+    font-size: 13px;
+  }
+  body main #dashboard .container .products div.row-seemore a {
+    font-size: 14px;
+  }
+  body main #dashboard .container .recent-messages .container {
+    flex-direction: column;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message {
+    width: calc(100% - 30px);
+    border-radius: 5px;
+    padding: 20px 15px;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .top-section .avatar {
+    border-radius: 50%;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .top-section .name h4 {
+    margin: 0;
+    font-family: "Muli", sans-serif;
+    color: #fff;
+    margin-left: 10px;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .message-content {
+    position: relative;
+    margin-top: 5px;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .message-content p {
+    font-size: 12.5px;
+    line-height: 22px;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .footer-message .attachements img {
+    width: 13px;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .footer-message .attachements span {
+    font-size: 11px;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div {
+    padding: 4px 7px;
+    font-size: 11px;
+    text-align: center;
+  }
+  body main #dashboard .container .recent-messages .container .messages .message .footer-message .actions div.reply img {
+    width: 10px;
+    margin-right: 0px;
+  }
+}
